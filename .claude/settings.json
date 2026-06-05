@@ -11,7 +11,27 @@
       "Read(//Users/fmaiabatista/Coding/fma/**)",
       "Bash(npm run *)",
       "Bash(npm install *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(echo \"BUILD_EXIT: $?\")",
+      "Bash(npm ls *)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(git commit *)",
+      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io log --oneline -3)",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(npx eslint *)",
+      "Bash(npx prettier *)",
+      "Bash(node -e \"const p = require\\('./package.json'\\); const s = p.scripts; console.log\\('scripts:', JSON.stringify\\(s\\)\\);\")",
+      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io log --oneline -5)",
+      "Bash(echo \"EXIT CODE: $?\")",
+      "Bash(npx astro *)",
+      "Bash(npm i *)",
+      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io add src/layouts/BaseLayout.astro)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(echo \"EXIT_CODE: $?\")",
+      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag scaffold-complete)",
+      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag)"
     ],
     "additionalDirectories": [
       "/Users/fmaiabatista/Coding/fma/fmaiabatista.github.io/docs/superpowers"
