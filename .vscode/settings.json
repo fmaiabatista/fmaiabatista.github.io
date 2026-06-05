@@ -1,4 +1,7 @@
 {
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"eslint.validate": ["astro", "typescript", "typescriptreact"],
 	"workbench.colorCustomizations": {
 		"activityBar.background": "#223204",
 		"titleBar.activeBackground": "#2F4706",
