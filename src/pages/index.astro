@@ -1,17 +1,13 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroHeading from '../components/HeroHeading';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <main class="flex min-h-screen flex-col items-center justify-center gap-8">
+    <HeroHeading client:load />
+    <a href="/about" class="text-blue-600 underline hover:text-blue-800">
+      About →
+    </a>
+  </main>
+</BaseLayout>
