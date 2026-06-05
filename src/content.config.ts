@@ -1,5 +1,6 @@
 // src/content.config.ts
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'zod';
 
 const blog = defineCollection({
   type: 'content',
