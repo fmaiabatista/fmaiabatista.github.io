@@ -32,10 +32,13 @@
       "Bash(echo \"EXIT_CODE: $?\")",
       "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag scaffold-complete)",
       "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag)",
-      "Bash(xargs ls)"
+      "Bash(xargs ls)",
+      "Bash(mkdir -p /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io/.github/workflows)",
+      "Bash(git push *)"
     ],
     "additionalDirectories": [
-      "/Users/fmaiabatista/Coding/fma/fmaiabatista.github.io/docs/superpowers"
+      "/Users/fmaiabatista/Coding/fma/fmaiabatista.github.io/docs/superpowers",
+      "/Users/fmaiabatista/Coding/fma/fmaiabatista.github.io/.github"
     ]
   }
 }
