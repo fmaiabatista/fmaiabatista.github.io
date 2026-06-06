@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle";
+import PageContentGrid from "../components/PageContentGrid";
+
+const PAGE = "hobbies";
+
+const hobbies = [
+  { name: "football" },
+  { name: "fitness" },
+  { name: "videogames" },
+  { name: "boardgames" },
+  { name: "scripting" },
+  { name: "web apps" },
+];
+---
+
+<BaseLayout title={PAGE} bodyClass="bg-rose-50">
+  <PageTitle title={PAGE} />
+  <PageContentGrid>
+    {hobbies.map(({ name }) => <div>{name}</div>)}
+  </PageContentGrid>
+</BaseLayout>

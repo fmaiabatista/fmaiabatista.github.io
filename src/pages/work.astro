@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle";
+import PageContentGrid from "../components/PageContentGrid";
+
+const PAGE = "work";
+---
+
+<BaseLayout title={PAGE} bodyClass="bg-violet-50">
+  <PageTitle title={PAGE} />
+  <PageContentGrid cols={1}>work page</PageContentGrid>
+</BaseLayout>

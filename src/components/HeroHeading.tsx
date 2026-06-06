@@ -1,6 +1,5 @@
-// src/components/HeroHeading.tsx
-import { motion } from 'motion/react';
-import { Sparkles } from 'lucide-react';
+import { motion } from "motion/react";
+import { Sparkles } from "lucide-react";
 
 export default function HeroHeading() {
   return (

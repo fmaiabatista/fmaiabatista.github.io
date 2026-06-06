@@ -1,13 +1,20 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroHeading from '../components/HeroHeading';
+import LinksMap from "../components/LinksMap";
+import PageContentGrid from "../components/PageContentGrid";
+import PageTitle from "../components/PageTitle";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const links = [
+  { href: "/hobbies", label: "hobbies" },
+  { href: "/work", label: "work" },
+  { href: "/blog", label: "blog" },
+  { href: "/web-projects", label: "web projects" },
+];
 ---
 
-<BaseLayout title="Home">
-  <main class="flex min-h-screen flex-col items-center justify-center gap-8">
-    <HeroHeading client:load />
-    <a href="/about" class="text-blue-600 underline hover:text-blue-800">
-      About →
-    </a>
-  </main>
+<BaseLayout title="home" bodyClass="bg-amber-50">
+  <PageTitle title="welcome to my site" breadcrumb={false} />
+  <PageContentGrid cols={2}>
+    <LinksMap links={links} />
+  </PageContentGrid>
 </BaseLayout>

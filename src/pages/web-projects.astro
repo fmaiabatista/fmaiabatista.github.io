@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle";
+import PageContentGrid from "../components/PageContentGrid";
+import LinksMap from "../components/LinksMap";
+
+const PAGE = "web projects";
+
+const links = [
+  { href: "https://fma-polyglot.vercel.app", label: "polyglot" },
+  { href: "https://fma-copily.vercel.app", label: "copily" },
+  { href: "https://fma-calqui.vercel.app", label: "calqui" },
+  { href: "https://fma-eversunset.vercel.app", label: "eversunset" },
+];
+---
+
+<BaseLayout title={PAGE} bodyClass="bg-blue-50">
+  <PageTitle title={PAGE} />
+  <PageContentGrid cols={2}>
+    <LinksMap links={links} newTab={true} />
+  </PageContentGrid>
+</BaseLayout>

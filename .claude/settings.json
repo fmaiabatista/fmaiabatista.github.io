@@ -31,7 +31,8 @@
       "Bash(echo \"EXIT:$?\")",
       "Bash(echo \"EXIT_CODE: $?\")",
       "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag scaffold-complete)",
-      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag)"
+      "Bash(git -C /Users/fmaiabatista/Coding/fma/fmaiabatista.github.io tag)",
+      "Bash(xargs ls)"
     ],
     "additionalDirectories": [
       "/Users/fmaiabatista/Coding/fma/fmaiabatista.github.io/docs/superpowers"

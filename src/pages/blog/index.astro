@@ -1,24 +1,29 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle";
+import PageContentGrid from "../../components/PageContentGrid";
+import Link from "../../components/Link";
 
-const posts = await getCollection('blog');
+const PAGE = "blog";
+
+const posts = await getCollection("blog");
 ---
 
-<BaseLayout title="Blog">
-  <main class="mx-auto max-w-2xl px-4 py-16">
-    <h1 class="mb-8 text-4xl font-bold text-gray-900">Blog</h1>
+<BaseLayout title={PAGE} bodyClass="bg-teal-50">
+  <PageTitle title={PAGE} />
+  <PageContentGrid cols={1}>
     <ul class="space-y-4">
-      {posts.map((post) => (
-        <li>
-          <a href={`/blog/${post.id}`} class="text-blue-600 underline hover:text-blue-800">
-            {post.data.title}
-          </a>
-        </li>
-      ))}
+      {
+        posts.map((post) => {
+          const label = post.data.title;
+          return (
+            <li>
+              <Link href={`/blog/${post.id}`} label={label} />
+            </li>
+          );
+        })
+      }
     </ul>
-    <a href="/" class="mt-12 inline-block text-blue-600 underline hover:text-blue-800">
-      ← Home
-    </a>
-  </main>
+  </PageContentGrid>
 </BaseLayout>
