@@ -1,5 +1,5 @@
 ---
-// import { ClientRouter } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 
 interface Props {
@@ -16,13 +16,18 @@ const { title, bodyClass } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <!-- <ClientRouter /> -->
+    <ClientRouter />
+    <style>
+      html {
+        font-family: Georgia, ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
   </head>
   <body class={bodyClass}>
     <main
-      class="m-auto flex min-h-screen max-w-175 flex-col items-center justify-center"
+      class="m-auto flex min-h-screen max-w-175 flex-col items-center pt-64"
     >
-      <div class="align-center -mt-48 flex w-full flex-col justify-center">
+      <div class="align-center flex w-full flex-col justify-center">
         <slot />
       </div>
     </main>
